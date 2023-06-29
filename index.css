@@ -5,6 +5,13 @@
 }
 
 body{
-    background-color: #303030;
-    color: #fff;
+    background-color: #4f6163c0;
+   
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(83, 14, 151);
 }
