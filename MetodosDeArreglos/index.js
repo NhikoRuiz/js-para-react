@@ -117,8 +117,8 @@
 // foreach
 
 // mostrar lista de verduras
-const frutas = ['Naranja','Manzana','Pera']
-frutas.forEach((frutas)=>console.log(frutas))
+// const frutas = ['Naranja','Manzana','Pera']
+// frutas.forEach((frutas)=>console.log(frutas))
 
 // Mostrar en pantalla
 // crear contenedor
@@ -128,17 +128,27 @@ frutas.forEach((frutas)=>console.log(frutas))
 // agregar canciones favoritas y despues mostrarlas
 
 
-
+// lista de canciones favoritas
+const cancionesFavoritas = []
+// boton para agregar cancion favoritas
 
 
 const botonAgregar  = document.createElement('button');
 botonAgregar.innerText = 'Agregar'
 document.body.append(botonAgregar)
+// funcion agregar
 botonAgregar.addEventListener('click',(e)=>{
     const agregar = prompt('Agregar cancion favorita')
     cancionesFavoritas.push(agregar)
-    console.log(cancionesFavoritas)
+
 })
 
-const cancionesFavoritas = []
-// sin terrminar
+// boton para mostrar las canciones
+const botonMostrarLista = document.createElement('button');
+botonMostrarLista.innerText = 'Mostrar lista'
+document.body.append(botonMostrarLista)
+
+// funcion mostrar
+botonMostrarLista.addEventListener('click',()=>{
+    cancionesFavoritas.forEach((cancionFavorita)=>console.log(cancionFavorita))
+})
